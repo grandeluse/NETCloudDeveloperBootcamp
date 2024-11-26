@@ -3,3 +3,7 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+
+# Rider
+# Rider auto-generates .iml files, and contentModel.xml
+**/.idea/**
