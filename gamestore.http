@@ -4,9 +4,9 @@
 GET {{['GameStore.Api_HostAddress']}}/games
 
 ### Get a single game by id
-GET {{['GameStore.Api_HostAddress']}}/games/1510eb9b-9e49-4c43-8f6c-9bd7edc6d39d
+GET {{['GameStore.Api_HostAddress']}}/games/d9939446-3987-4c2e-9f34-e6995f05a456
 
-### Post a new game
+### Create a new game
 POST {{['GameStore.Api_HostAddress']}}/games
 Content-Type: application/json
 
@@ -15,4 +15,15 @@ Content-Type: application/json
   "genre": "Kids and Family",
   "price": 19.99,
   "releaseDate": "2011-11-18"
+}
+
+### Update an existing game
+PUT {{['GameStore.Api_HostAddress']}}/games/d9939446-3987-4c2e-9f34-e6995f05a456
+Content-Type: application/json
+
+{
+  "name": "Street Fighter II Turbo",
+  "genre": "Fighting",
+  "price": 9.99,
+  "releaseDate": "1992-07-15"
 }
