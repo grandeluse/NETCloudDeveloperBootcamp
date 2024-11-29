@@ -34,4 +34,11 @@ List<Game> games =
 // GET /games
 app.MapGet("/games", () => games);
 
+// GET /games/{id}
+app.MapGet("/games/{id}", (Guid id) =>
+{
+    Game? game = games.Find(game => game.Id == id);
+    return game is null ? Results.NotFound() : Results.Ok(game);
+});
+
 app.Run();

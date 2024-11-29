@@ -2,3 +2,6 @@
 
 ### Get all games list
 GET {{['GameStore.Api_HostAddress']}}/games
+
+### Get a single game by id
+GET {{['GameStore.Api_HostAddress']}}/games/fa2c73ee-4c29-427d-81fe-0ee22134bbd3
