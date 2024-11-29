@@ -52,6 +52,7 @@ app.MapPost("/games", (Game game) =>
         GetGameEndpointName, 
         new { id = game.Id }, 
         game);
-});
+})
+    .WithParameterValidation();
 
 app.Run();
