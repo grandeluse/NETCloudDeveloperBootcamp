@@ -27,3 +27,6 @@ Content-Type: application/json
   "price": 9.99,
   "releaseDate": "1992-07-15"
 }
+
+### Delete a game
+DELETE {{['GameStore.Api_HostAddress']}}/games/c848259d-8a08-4f20-a53e-622f94f085cc
