@@ -1,4 +1,4 @@
 @GameStore.Api_HostAddress = http://localhost:5082
 
 ### Get base request
-GET {{GameStore.Api_HostAddress}}
+GET {{['GameStore.Api_HostAddress']}}
