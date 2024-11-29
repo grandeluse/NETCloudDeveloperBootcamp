@@ -4,4 +4,15 @@
 GET {{['GameStore.Api_HostAddress']}}/games
 
 ### Get a single game by id
-GET {{['GameStore.Api_HostAddress']}}/games/fa2c73ee-4c29-427d-81fe-0ee22134bbd3
+GET {{['GameStore.Api_HostAddress']}}/games/1510eb9b-9e49-4c43-8f6c-9bd7edc6d39d
+
+### Post a new game
+POST {{['GameStore.Api_HostAddress']}}/games
+Content-Type: application/json
+
+{
+  "name": "Minecraft",
+  "genre": "Kids and Family",
+  "price": 19.99,
+  "releaseDate": "2011-11-18"
+}
