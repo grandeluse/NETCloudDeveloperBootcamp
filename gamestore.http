@@ -4,7 +4,7 @@
 GET {{['GameStore.Api_HostAddress']}}/games
 
 ### Get a single game by id
-GET {{['GameStore.Api_HostAddress']}}/games/c102a865-4180-464f-96c6-18f7821970bb
+GET {{['GameStore.Api_HostAddress']}}/games/2562329e-d167-4f19-b1a0-48aff2bc65a7
 
 ### Create a new game
 POST {{['GameStore.Api_HostAddress']}}/games
@@ -12,9 +12,10 @@ Content-Type: application/json
 
 {
   "name": "Minecraft",
-  "genre": "Kids and Family",
+  "genreId": "fc28eda1-cc34-4d6e-b300-02e52867a492",
   "price": 19.99,
-  "releaseDate": "2011-11-18"
+  "releaseDate": "2011-11-18",
+  "description": "Minecraft is a 2011 sandbox game developed and published by Swedish video game developer Mojang Studios. Originally created by Markus Notch Persson using the Java programming language, the first public beta build was released on 17 May 2009."
 }
 
 ### Update an existing game
