@@ -4,7 +4,7 @@
 GET {{['GameStore.Api_HostAddress']}}/games
 
 ### Get a single game by id
-GET {{['GameStore.Api_HostAddress']}}/games/b857cd47-5435-4c38-b336-68b361e64c4b
+GET {{['GameStore.Api_HostAddress']}}/games/a84f010b-f18c-4343-946f-6ba2a63ad6f2
 
 ### Create a new game
 POST {{['GameStore.Api_HostAddress']}}/games
