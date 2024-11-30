@@ -4,5 +4,5 @@ public class Genre
 {
     public Guid Id { get; set; }
     
-    public required string Description { get; set; }
+    public required string Name { get; set; }
 }

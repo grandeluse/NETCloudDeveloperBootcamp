@@ -4,7 +4,7 @@
 GET {{['GameStore.Api_HostAddress']}}/games
 
 ### Get a single game by id
-GET {{['GameStore.Api_HostAddress']}}/games/63ac5fb8-6245-448e-8d38-eefd6e0d2659
+GET {{['GameStore.Api_HostAddress']}}/games/c102a865-4180-464f-96c6-18f7821970bb
 
 ### Create a new game
 POST {{['GameStore.Api_HostAddress']}}/games
@@ -30,3 +30,6 @@ Content-Type: application/json
 
 ### Delete a game
 DELETE {{['GameStore.Api_HostAddress']}}/games/c848259d-8a08-4f20-a53e-622f94f085cc
+
+### GET all genres
+GET {{['GameStore.Api_HostAddress']}}/genres
