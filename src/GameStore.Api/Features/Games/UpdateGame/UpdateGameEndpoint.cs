@@ -9,7 +9,7 @@ public static class UpdateGameEndpoint
         GameStoreData data)
     {
         // PUT /games/{id}
-        app.MapPut("/games/{id}", (Guid id, UpdateGameDto gameDto) =>
+        app.MapPut("/{id}", (Guid id, UpdateGameDto gameDto) =>
         {
             var existingGame = data.GetGame(id);
             if (existingGame is null)

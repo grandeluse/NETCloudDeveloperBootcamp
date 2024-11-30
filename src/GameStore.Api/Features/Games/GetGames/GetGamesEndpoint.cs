@@ -9,7 +9,7 @@ public static class GetGamesEndpoint
         GameStoreData data)
     {
         // GET /games
-        app.MapGet("/games", () => data.GetGames()
+        app.MapGet("/", () => data.GetGames()
             .Select(game => new GameSummaryDto(
                 game.Id, 
                 game.Name, 

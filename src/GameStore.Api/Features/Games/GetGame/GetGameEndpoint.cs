@@ -11,7 +11,7 @@ public static class GetGameEndpoint
         GameStoreData data)
     {
         // GET /games/{id}
-        app.MapGet("/games/{id}", (Guid id) =>
+        app.MapGet("/{id}", (Guid id) =>
         {
             Game? game = data.GetGame(id);
             return game is null ? Results.NotFound() : Results.Ok(
