@@ -19,14 +19,15 @@ Content-Type: application/json
 }
 
 ### Update an existing game
-PUT {{['GameStore.Api_HostAddress']}}/games/d9939446-3987-4c2e-9f34-e6995f05a456
+PUT {{['GameStore.Api_HostAddress']}}/games/5e3e9bf2-8fc4-42d3-beb3-e367d07c6daa
 Content-Type: application/json
 
 {
   "name": "Street Fighter II Turbo",
-  "genre": "Fighting",
+  "genreId": "c78cc485-4174-48cd-afa3-06c623075867",
   "price": 9.99,
-  "releaseDate": "1992-07-15"
+  "releaseDate": "1992-07-15",
+  "description": "Street Fighter II Turbo: Hyper Fighting is a competitive fighting game released by Capcom for arcades in 1992"
 }
 
 ### Delete a game
