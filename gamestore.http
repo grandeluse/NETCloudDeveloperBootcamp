@@ -4,7 +4,7 @@
 GET {{['GameStore.Api_HostAddress']}}/games
 
 ### Get a single game by id
-GET {{['GameStore.Api_HostAddress']}}/games/2562329e-d167-4f19-b1a0-48aff2bc65a7
+GET {{['GameStore.Api_HostAddress']}}/games/b857cd47-5435-4c38-b336-68b361e64c4b
 
 ### Create a new game
 POST {{['GameStore.Api_HostAddress']}}/games
@@ -19,7 +19,7 @@ Content-Type: application/json
 }
 
 ### Update an existing game
-PUT {{['GameStore.Api_HostAddress']}}/games/5e3e9bf2-8fc4-42d3-beb3-e367d07c6daa
+PUT {{['GameStore.Api_HostAddress']}}/games/b857cd47-5435-4c38-b336-68b361e64c4b
 Content-Type: application/json
 
 {

@@ -64,7 +64,7 @@ public class GameStoreData
         games.RemoveAll(game => game.Id == id);
     }
     
-    public IEnumerable<Genre> GetGenre() => genres;
+    public IEnumerable<Genre> GetGenres() => genres;
 
     public Genre? GetGenre(Guid id) => genres.Find(genre => genre.Id == id);
 }
