@@ -3,12 +3,13 @@ using GameStore.Api.Features.Games;
 using GameStore.Api.Features.Genres;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddTransient<GameStoreData>();
+
 var app = builder.Build();
 
-GameStoreData data = new();
-
-app.MapGames(data);
-app.MapGenres(data);
+app.MapGames();
+app.MapGenres();
 
 app.Run();
 
