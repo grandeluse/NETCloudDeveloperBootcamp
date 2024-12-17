@@ -10,9 +10,10 @@ public static class CreateGameEndpoint
         this IEndpointRouteBuilder app)
     {
         // POST /games
-        app.MapPost("/", (CreateGameDto gameDto, GameStoreData data) =>
+        app.MapPost("/", (CreateGameDto gameDto, GameStoreData data, GameDataLogger logger) =>
         {
             var genre = data.GetGenre(gameDto.GenreId);
+            
             if(genre is null)
                 return Results.BadRequest("Invalid Genre id");
 
@@ -26,6 +27,8 @@ public static class CreateGameEndpoint
             };
     
             data.AddGame(game);
+            
+            logger.PrintGames();
     
             return Results.CreatedAtRoute(
                 EndpointNames.GetGame, 
