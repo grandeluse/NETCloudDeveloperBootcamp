@@ -12,7 +12,7 @@ Content-Type: application/json
 
 {
   "name": "Minecraft",
-  "genreId": "fc28eda1-cc34-4d6e-b300-02e52867a492",
+  "genreId": "9305EACE-FB2C-413E-A298-B20C6843E305",
   "price": 19.99,
   "releaseDate": "2011-11-18",
   "description": "Minecraft is a 2011 sandbox game developed and published by Swedish video game developer Mojang Studios. Originally created by Markus Notch Persson using the Java programming language, the first public beta build was released on 17 May 2009."
