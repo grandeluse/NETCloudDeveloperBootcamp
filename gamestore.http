@@ -4,18 +4,18 @@
 GET {{['GameStore.Api_HostAddress']}}/games
 
 ### Get a single game by id
-GET {{['GameStore.Api_HostAddress']}}/games/7104904B-1091-4D3A-A036-F94971E2DAB5
+GET {{['GameStore.Api_HostAddress']}}/games/86bef455-961d-434d-9100-79b6ec3612e6
 
 ### Create a new game
 POST {{['GameStore.Api_HostAddress']}}/games
 Content-Type: application/json
 
 {
-  "name": "Minecraft",
-  "genreId": "9305EACE-FB2C-413E-A298-B20C6843E305",
+  "name": "Street Fighter II",
+  "genreId": "953EF21C-C4B3-4DF9-A4A7-58D41933683E",
   "price": 19.99,
-  "releaseDate": "2011-11-18",
-  "description": "Minecraft is a 2011 sandbox game developed and published by Swedish video game developer Mojang Studios. Originally created by Markus Notch Persson using the Java programming language, the first public beta build was released on 17 May 2009."
+  "releaseDate": "1992-07-15",
+  "description": "Street Fighter II: The World Warrior is a 1991 fighting game produced by Capcom for arcades, and their fourteenth game to use the CP System arcade system board."
 }
 
 ### Update an existing game
