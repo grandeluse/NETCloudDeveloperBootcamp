@@ -19,15 +19,15 @@ Content-Type: application/json
 }
 
 ### Update an existing game
-PUT {{['GameStore.Api_HostAddress']}}/games/ce2e515e-4bc4-48b7-9f8c-54ec2e9b0d63
+PUT {{['GameStore.Api_HostAddress']}}/games/7104904B-1091-4D3A-A036-F94971E2DAB5
 Content-Type: application/json
 
 {
-  "name": "Street Fighter II Turbo",
-  "genreId": "c78cc485-4174-48cd-afa3-06c623075867",
-  "price": 9.99,
-  "releaseDate": "1992-07-15",
-  "description": "Street Fighter II Turbo: Hyper Fighting is a competitive fighting game released by Capcom for arcades in 1992"
+  "name": "Minecraft for Windows",
+  "genreId": "9305EACE-FB2C-413E-A298-B20C6843E305",
+  "price": 7.97,
+  "releaseDate": "2011-11-18",
+  "description": "Minecraft is a 2011 sandbox game developed and published by Swedish video game developer Mojang Studios. Originally created by Markus Notch Persson using the Java programming language, the first public beta build was released on 17 May 2009."
 }
 
 ### Delete a game
