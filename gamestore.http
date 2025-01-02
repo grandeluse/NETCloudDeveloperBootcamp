@@ -11,11 +11,11 @@ POST {{['GameStore.Api_HostAddress']}}/games
 Content-Type: application/json
 
 {
-  "name": "Street Fighter II",
+  "name": "TEST GAME",
   "genreId": "953EF21C-C4B3-4DF9-A4A7-58D41933683E",
   "price": 19.99,
   "releaseDate": "1992-07-15",
-  "description": "Street Fighter II: The World Warrior is a 1991 fighting game produced by Capcom for arcades, and their fourteenth game to use the CP System arcade system board."
+  "description": "TEST DESCRIPTION"
 }
 
 ### Update an existing game
@@ -31,7 +31,7 @@ Content-Type: application/json
 }
 
 ### Delete a game
-DELETE {{['GameStore.Api_HostAddress']}}/games/47978cc7-5258-44b4-a304-b4e8db9232c0
+DELETE {{['GameStore.Api_HostAddress']}}/games/e7fc41af-035a-4b41-80a6-6b209c1fb639
 
 ### GET all genres
 GET {{['GameStore.Api_HostAddress']}}/genres
