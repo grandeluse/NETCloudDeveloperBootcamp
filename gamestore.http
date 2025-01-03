@@ -11,11 +11,11 @@ POST {{['GameStore.Api_HostAddress']}}/games
 Content-Type: application/json
 
 {
-  "name": "Final Fantasy VII",
-  "genreId": "481fb917-8db6-42f9-bf96-337e1a7fec99",
-  "price": 69.99,
-  "releaseDate": "2020-04-10",
-  "description": "Final Fantasy VII is a 1997 role-playing video game developed by Square for the PlayStation."
+  "name": "Forza Horizon 5",
+  "genreId": "a56a6faa-736e-4acc-9f3f-a34795be41c5",
+  "price": 59.99,
+  "releaseDate": "2021-11-05",
+  "description": "Forza Horizon 5 is a 2021 racing video game developed by Playground Games and published by Xbox Game Studios."
 }
 
 ### Update an existing game

@@ -12,7 +12,7 @@ public static class CreateGameEndpoint
         app.MapPost("/", async (
             CreateGameDto gameDto, 
             GameStoreContext dbContext,
-            ILoggerFactory loggerFactory) =>
+            ILogger<Program> logger) =>
         {
             var game = new Game()
             {
@@ -27,7 +27,6 @@ public static class CreateGameEndpoint
 
             await dbContext.SaveChangesAsync();
 
-            var logger = loggerFactory.CreateLogger("Games");
             logger.LogInformation(
                 "Created game {GameName} with {GamePrice}", 
                 game.Name, 
