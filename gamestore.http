@@ -11,11 +11,11 @@ POST {{['GameStore.Api_HostAddress']}}/games
 Content-Type: application/json
 
 {
-  "name": "Final Fantasy XIV",
+  "name": "Final Fantasy VII",
   "genreId": "481fb917-8db6-42f9-bf96-337e1a7fec99",
-  "price": 39.97,
-  "releaseDate": "2010-09-30",
-  "description": "Final Fantasy XIV is a massively multiplayer online role-playing game (MMORPG) developed and published by Square Enix."
+  "price": 69.99,
+  "releaseDate": "2020-04-10",
+  "description": "Final Fantasy VII is a 1997 role-playing video game developed by Square for the PlayStation."
 }
 
 ### Update an existing game

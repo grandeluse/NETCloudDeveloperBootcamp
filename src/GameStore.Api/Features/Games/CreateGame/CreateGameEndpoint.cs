@@ -6,13 +6,14 @@ namespace GameStore.Api.Features.Games.CreateGame;
 
 public static class CreateGameEndpoint
 {
-    public static void MapCreateGame(
-        this IEndpointRouteBuilder app)
+    public static void MapCreateGame(this IEndpointRouteBuilder app)
     {
         // POST /games
-        app.MapPost("/", async (CreateGameDto gameDto, GameStoreContext dbContext) =>
+        app.MapPost("/", async (
+            CreateGameDto gameDto, 
+            GameStoreContext dbContext,
+            ILoggerFactory loggerFactory) =>
         {
-           
             var game = new Game()
             {
                 Name = gameDto.Name,
@@ -25,6 +26,12 @@ public static class CreateGameEndpoint
             dbContext.Games.Add(game);
 
             await dbContext.SaveChangesAsync();
+
+            var logger = loggerFactory.CreateLogger("Games");
+            logger.LogInformation(
+                "Created game {GameName} with {GamePrice}", 
+                game.Name, 
+                game.Price);
             
             return Results.CreatedAtRoute(
                 EndpointNames.GetGame, 
