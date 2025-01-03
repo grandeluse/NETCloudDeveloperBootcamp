@@ -11,15 +11,23 @@ public static class GetGameEndpoint
         // GET /games/{id}
         app.MapGet("/{id}", (Guid id, GameStoreContext dbContext) =>
         {
-            Game? game = dbContext.Games.Find(id);
-            return game is null ? Results.NotFound() : Results.Ok(
-                new GameDetailsDto(
-                    game.Id, 
-                    game.Name, 
-                    game.GenreId, 
-                    game.Price, 
-                    game.ReleaseDate, 
-                    game.Description));
+            Task<Game?> findGameTask = dbContext.Games
+                .FindAsync(id)
+                .AsTask();
+            
+            return findGameTask.ContinueWith(task =>
+            {
+                Game? game = task.Result;
+                
+                return game is null ? Results.NotFound() : Results.Ok(
+                    new GameDetailsDto(
+                        game.Id, 
+                        game.Name, 
+                        game.GenreId, 
+                        game.Price, 
+                        game.ReleaseDate, 
+                        game.Description));
+            });
         }).WithName(EndpointNames.GetGame);
     }
 }
