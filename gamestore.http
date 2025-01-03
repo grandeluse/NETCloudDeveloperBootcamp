@@ -4,34 +4,34 @@
 GET {{['GameStore.Api_HostAddress']}}/games
 
 ### Get a single game by id
-GET {{['GameStore.Api_HostAddress']}}/games/86bef455-961d-434d-9100-79b6ec3612e6
+GET {{['GameStore.Api_HostAddress']}}/games/6fd217bd-ec2a-479d-b932-d09401820e49
 
 ### Create a new game
 POST {{['GameStore.Api_HostAddress']}}/games
 Content-Type: application/json
 
 {
-  "name": "TEST GAME",
-  "genreId": "953EF21C-C4B3-4DF9-A4A7-58D41933683E",
-  "price": 19.99,
-  "releaseDate": "1992-07-15",
-  "description": "TEST DESCRIPTION"
+  "name": "Final Fantasy XIV",
+  "genreId": "481fb917-8db6-42f9-bf96-337e1a7fec99",
+  "price": 39.97,
+  "releaseDate": "2010-09-30",
+  "description": "Final Fantasy XIV is a massively multiplayer online role-playing game (MMORPG) developed and published by Square Enix."
 }
 
 ### Update an existing game
-PUT {{['GameStore.Api_HostAddress']}}/games/7104904B-1091-4D3A-A036-F94971E2DAB5
+PUT {{['GameStore.Api_HostAddress']}}/games/6fd217bd-ec2a-479d-b932-d09401820e49
 Content-Type: application/json
 
 {
-  "name": "Minecraft for Windows",
-  "genreId": "9305EACE-FB2C-413E-A298-B20C6843E305",
-  "price": 7.97,
-  "releaseDate": "2011-11-18",
-  "description": "Minecraft is a 2011 sandbox game developed and published by Swedish video game developer Mojang Studios. Originally created by Markus Notch Persson using the Java programming language, the first public beta build was released on 17 May 2009."
+  "name": "Final Fantasy XIV",
+  "genreId": "481fb917-8db6-42f9-bf96-337e1a7fec99",
+  "price": 39.97,
+  "releaseDate": "2010-09-30",
+  "description": "Final Fantasy XIV is a massively multiplayer online role-playing game (MMORPG) developed and published by Square Enix."
 }
 
 ### Delete a game
-DELETE {{['GameStore.Api_HostAddress']}}/games/e7fc41af-035a-4b41-80a6-6b209c1fb639
+DELETE {{['GameStore.Api_HostAddress']}}/games/62ed40f9-2914-4e2b-9d64-a308a8d191fd
 
 ### GET all genres
 GET {{['GameStore.Api_HostAddress']}}/genres

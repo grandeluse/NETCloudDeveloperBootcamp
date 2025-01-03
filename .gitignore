@@ -7,3 +7,5 @@ riderModule.iml
 # Rider
 # Rider auto-generates .iml files, and contentModel.xml
 **/.idea/**
+*.db-shm
+*.db-wal
